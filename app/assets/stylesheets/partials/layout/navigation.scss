@@ -16,6 +16,59 @@ nav {
       opacity: 0.8;
     }
   }
+
+  .col-sm-5,
+  .col-sm-7 {
+    padding: 0;
+  }
+}
+
+.pc-menu {
+  margin-right: 10px;
+}
+
+.mobile-menu {
+  i {
+    color: white;
+  }
+
+  ul {
+    padding: 0px;
+  }
+
+  a {
+    display: block;
+    padding: 10px 0px 10px 25px !important;
+  }
+
+  a:hover {
+    background: white !important;
+    color: black !important;
+
+    i {
+      color: black;
+    }
+  }
+}
+
+.icon-bar {
+  background-color: white !important;
+}
+
+.active a {
+  background: $navbarColor !important;
+  border-bottom: solid 5px white;
+}
+
+.dropdown-toggle,
+.dropdown-menu {
+  background: $navbarColor !important;
+  border: none;
+}
+
+.dropdown-menu a:hover {
+  color: black !important;
+  background: white !important;
 }
 
 .navbar-default,
@@ -32,4 +85,16 @@ button.navbar-toggle {
 
 body {
   margin-top: 50px;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .browser-menu {
+    display: none !important;
+  }
 }
