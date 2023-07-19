@@ -48,6 +48,7 @@ gem "bootsnap", require: false
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'sass-rails'
+gem 'bootstrap_form'
 
 gem 'devise'
 
