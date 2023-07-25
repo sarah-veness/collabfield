@@ -8,6 +8,13 @@ Rails.application.routes.draw do
     get 'login', to: 'devise/sessions#new'
     get 'signup', to: 'devise/registrations#new'
     get '/users/sign_out', to: 'devise/sessions#destroy'
+  end
 
+  resources :posts do
+    collection do
+      get 'hobby'
+      get 'study'
+      get 'team'
+    end
   end
 end
