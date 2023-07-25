@@ -1,5 +1,7 @@
 require 'rails_helper'
 
+# Here we use Devise’s build method instead of create. This way we create a new object without saving it to the database.
+
 RSpec.feature 'Sign Up', type: :feature do
   let(:user) { build(:user) }
 
