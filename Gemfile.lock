@@ -111,11 +111,8 @@ GEM
     diff-lcs (1.5.0)
     erubi (1.12.0)
     execjs (2.8.1)
-    factory_girl (4.9.0)
-      activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
-      railties (>= 3.0.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -290,7 +287,7 @@ DEPENDENCIES
   database_cleaner
   debug
   devise
-  factory_girl_rails
+  factory_bot
   headless
   importmap-rails
   jbuilder
