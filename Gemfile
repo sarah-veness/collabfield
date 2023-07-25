@@ -78,4 +78,5 @@ group :test do
   gem 'rails-controller-testing'
   gem 'headless'
   gem 'database_cleaner'
+  gem 'faker'
 end
