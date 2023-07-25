@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature 'Logout', type: :feature do
+RSpec.feature 'Log Out', type: :feature do
   let(:user) {create(:user)}
 
   scenario 'user successfully logs out', js: true do
@@ -8,6 +8,6 @@ RSpec.feature 'Logout', type: :feature do
     visit root_path
     find('nav #user-settings').click
     find('li a', text: 'Log out').click
-    expect(page).to have_selector('nav a', text: 'Login')
+    expect(page).to have_selector('nav a', text: 'Log In')
   end
 end
