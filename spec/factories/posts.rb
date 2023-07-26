@@ -1,9 +1,7 @@
-require 'faker'
-
 FactoryBot.define do
   factory :post do
-    title { Faker::TvShows::SouthPark.episode_name }
-    content { Faker::TvShows::SouthPark.quote }
+    title { 'A title' }
+    content { 'Some content for the article' }
     user
     category
   end
