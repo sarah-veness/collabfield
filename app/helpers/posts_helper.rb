@@ -20,6 +20,6 @@ module PostsHelper
   end
 
   def post_format_partial_path
-    current_page?(root_path) ? 'posts/post/home_page' : 'posts/post/branch_page
+    current_page?(root_path) ? 'posts/post/home_page' : 'posts/post/branch_page'
   end
 end
