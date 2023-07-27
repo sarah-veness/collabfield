@@ -2,6 +2,7 @@
 
 //= require jquery
 //= require bootstrap-sprockets
+//= require posts/infinite_scroll
 
 import "@hotwired/turbo-rails"
 import "controllers"
