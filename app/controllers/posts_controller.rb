@@ -26,9 +26,8 @@ class PostsController < ApplicationController
       posts = Post.by_branch(branch).search(search)
     elsif category.present? && search.blank?
       posts = Post.by_category(branch, category)
-    elsif category.present? && search.present?
+    else 
       posts = Post.by_category(branch, category).search(search)
-    else
     end
   end
 
@@ -37,6 +36,11 @@ class PostsController < ApplicationController
   def posts_for_branch(branch)
     @categories = Category.where(branch: branch)
     @posts = get_posts.paginate(page: params[:page])
+
+    respond_to do |format|
+      format.html
+      format.js { render partial: 'posts/posts_pagination_page' }
+    end
   end
 
   def get_posts
